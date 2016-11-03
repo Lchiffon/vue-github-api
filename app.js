@@ -19,13 +19,16 @@ var app = new Vue({
 
   methods: {
     fetchData: function () {
-      var xhr = new XMLHttpRequest()
-      var self = this
-      xhr.open('GET', apiURL + self.user)
-      xhr.onload = function () {
-        self.response = JSON.parse(xhr.responseText)
-      }
-      xhr.send()
+      var self = this;
+
+      fetch(apiURL + self.user)
+        .then(response => response.json())
+        .then(data => {
+          self.response = data
+        }, (err) => {
+          console.error(err);
+          self.response = {};
+        });
     }
   }
 });
