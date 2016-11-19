@@ -7,4 +7,4 @@ This was me, as a back-end developer, trying to learn and keep up with all the f
 Open `index.html` et voilà. 
 
 # Demo
-![Demo](demo.png)
+![Demo](assets/demo.gif)
