@@ -9,26 +9,19 @@ var app = new Vue({
     response: null
   },
 
-  created: function () {
-    this.fetchData()
-  },
-
   watch: {
     user: 'fetchData'
   },
 
   methods: {
     fetchData: function () {
-      var self = this;
+      let self = this;
 
       fetch(apiURL + self.user)
         .then(response => response.json())
-        .then(data => {
-          self.response = data
-        }, (err) => {
-          console.error(err);
-          self.response = {};
-        });
+          .then(data => {
+            self.response = data
+          });
     }
   }
 });
