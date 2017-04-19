@@ -1,10 +1,10 @@
 # Vue.js & Github API
 
 # Description
-This was me, as a back-end developer, trying to learn and keep up with all the fuzz that happens in front-end development.
+cosx.org 主站搜索, 使用github api与vue.js
 
 # Usage
-Open `index.html` et voilà. 
+Open `index.html` et voilà.
 
 # Demo
 ![Demo](assets/demo.gif)
